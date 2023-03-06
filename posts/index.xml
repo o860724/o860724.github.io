@@ -6,14 +6,15 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 01:00:35 +0800</lastBuildDate><atom:link href="https://o860724.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 01:00:35 +0800</lastBuildDate><atom:link href="https://o860724.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://o860724.github.io/posts/my-first-post/</link>
-      <pubDate>Tue, 21 Feb 2023 01:00:35 +0800</pubDate>
+      <title>Drink King - drink order system</title>
+      <link>https://o860724.github.io/posts/drink-king-drink-order-system-1/</link>
+      <pubDate>Mon, 06 Mar 2023 01:00:35 +0800</pubDate>
       
-      <guid>https://o860724.github.io/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://o860724.github.io/posts/drink-king-drink-order-system-1/</guid>
+      <description>Drink King - drink order system 🔗Overview 🔗Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.
+Project Promt 🔗The handshake drink culture is a part of Taiwanese life.</description>
     </item>
     
   </channel>
