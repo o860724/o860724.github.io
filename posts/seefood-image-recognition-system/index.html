@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Seefood - image recognition system | My New Hugo Site</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Overview 🔗Seafood is an innovative app that helps foodies recognize cuisine from attractive photos and assists cooks in getting recipes and ingredient details. It also enables users to easily search for recipes by on hand ingredients, thereby helping them use up the food stored in fridges. The app supports voice typing, because we know that cooks’ hands are never spared in the kitchen. Additionally, the app welcomes all users to share their creative recipes, building up the community on our app and feeding our model training database simultaneously.">
+<meta name="generator" content="Hugo 0.109.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Seefood - image recognition system</h1>
+
+    <div class="tip">
+        <time datetime="2023-03-06 01:00:36 &#43;0800 CST">Mar 6, 2023</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1061 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          5 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h1 id="overview"><strong>Overview</strong> <a href="#overview" class="anchor">🔗</a></h1><p>Seafood is an innovative app that helps foodies recognize cuisine from attractive photos and assists cooks in getting recipes and ingredient details. It also enables users to easily search for recipes by on hand ingredients, thereby helping them use up the food stored in fridges.
+The app supports voice typing, because we know that cooks’ hands are never spared in the kitchen. Additionally, the app welcomes all users to share their creative recipes, building up the community on our app and feeding our model training database simultaneously.</p>
+<h1 id="project-prompt"><strong>Project Prompt</strong> <a href="#project-prompt" class="anchor">🔗</a></h1><p>Due to the current fitness trend, more and more people want to cook for themselves at home. However, it&rsquo;s never easy for a beginner who wants to make a wonderful dish just by referring to a drool-worthy cuisine photo.
+Therefore, we created &ldquo;Seefood&rdquo; app to solve this pain point. Help people see what&rsquo;s in their food and easily replicate it in their kitchens.</p>
+<h1 id="main-feature"><strong>Main Feature</strong> <a href="#main-feature" class="anchor">🔗</a></h1><ul>
+<li><strong>Seefood</strong>: Upload your food image and receive the recognition result paired with recipes and ingredient used.</li>
+<li><strong>My Ingredient</strong>: Search for recipes by on-hand ingredients. Voice typing is supported.</li>
+<li><strong>My Recipe</strong>: Users can share their original recipes with the community</li>
+<li><strong>Food Court</strong>: A social community on Seefood where people can browse others’ recipes and leave comments to interact with the authors.</li>
+</ul>
+<h1 id="my-role"><strong>My Role</strong> <a href="#my-role" class="anchor">🔗</a></h1><ul>
+<li>Project Ideation</li>
+<li>User Research</li>
+<li>User Case</li>
+<li>User Flow</li>
+<li>UI/UX Design</li>
+<li>Wireflow</li>
+</ul>
+<h1 id="my-tool"><strong>My Tool</strong> <a href="#my-tool" class="anchor">🔗</a></h1><ul>
+<li>Slack</li>
+<li>Figma</li>
+<li>HackMD</li>
+</ul>
+<h1 id="user-flow"><strong>User Flow</strong> <a href="#user-flow" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1cEfk8tzQZ3pYoA_075QbnKd_OCAg3G62" alt="User Flow"  />
+</p></p>
+<h1 id="user-case"><strong>User Case</strong> <a href="#user-case" class="anchor">🔗</a></h1><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Seefood</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To recognize the image uploaded by the user</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>1. The user take a photo or selects a photo from their album.<br />
+  2. The user uploads the photo to the Seefood system.<br />
+ 3. The system displays the accurate recognition result including ingredient and recipe information and relevant results.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The system may provide an incorrectly matched result, caused by<br />
+  1. Low-quality image input <br />
+ 2. Problems with the dataset <br />
+</td>
+</tr>
+<tr>
+<td></td>
+<td>The user may not receive any result, if there are internet connectivity issues or other factors.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>My ingredient</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To search for recipes by including ingredients</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>1. The user input ingredients they have.<br />
+ 2. The system searches for and returns relevant results with at least a 50% match in ingredients.<br />
+ 3. The user can check the search results and the ingredient and recipe information.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The system returns no result if the ingredient search does not match any recipe data.</td>
+</tr>
+<tr>
+<td>Special Requirement</td>
+<td>The ingredient input filed must support Google voice typing.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>My recipe</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To create a new recipe on system</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The user must be signed in.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>The recipe created by the user is added to the list.</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>1. The user input the recipe content and ingredients.<br />
+ 2. The user submit it to the system.<br />
+ 3. The system successfully adds the new recipe to the list.<br />
+ 4. The user can view the newly created recipe in the list.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The user isn&rsquo;t signed in. Redirect to the sign-in page.</td>
+</tr>
+<tr>
+<td></td>
+<td>If the creation is unsuccessful, alert by snack bar.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Food court</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>1. To browse and search for recipes.<br />
+2. For signed-in users, to save a recipe to favorites and leave a comment.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The user must be signed in to use “save to favorite” and “comment” function.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>The latest saved recipe is added to the favorite list and the latest comment is shown on the individual recipe page.</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>1. All users can browse and search all recipes on the system.<br />
+ 2. Signed-in users can save a recipe to their favorite list, and a “Saved to favorites” snack bar pop up.<br />
+ 3. Signed-in users can leave a comment on the individual recipe page.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The user not signed in wants to save the recipe to favorites. Redirect to the sign-in page.</td>
+</tr>
+<tr>
+<td></td>
+<td>The user not signed in wants to leave a comment. Redirect to the sign-in page.</td>
+</tr>
+<tr>
+<td></td>
+<td>If saving to favorites fails. Alert by snack bar.</td>
+</tr>
+<tr>
+<td></td>
+<td>If leaving a comment fails. Alert by snack bar.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="uiux-flow"><strong>UI/UX Flow</strong> <a href="#uiux-flow" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1wpT1ew8K8GQIcsMXGnPglj_ty1H_p8_q" alt="UI/UX Flow"  />
+</p></p>
+<h1 id="demo-video"><strong>Demo Video</strong> <a href="#demo-video" class="anchor">🔗</a></h1>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BBCVxwEdmbo&amp;ab" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Seefood Demo Video"></iframe>
+</div>
+
+<h1 id="uiux-redesign"><strong>UI/UX Redesign</strong> <a href="#uiux-redesign" class="anchor">🔗</a></h1><h2 id="food-court---home-page">Food Court - Home Page <a href="#food-court---home-page" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1dhJ9TcvmFBBaVmOzGxUza_sVzgXi8HNw" alt="Home Page"  />
+</p></p>
+<h3 id="existing-problems">Existing problems <a href="#existing-problems" class="anchor">🔗</a></h3><ul>
+<li>Display only a few items on one page</li>
+<li>Waste most of the screen space</li>
+<li>Scrolling direction is limited</li>
+</ul>
+<h3 id="new-solution">New solution <a href="#new-solution" class="anchor">🔗</a></h3><ul>
+<li>Catalog recommended items (and add a dedicated item list page for the same category)</li>
+<li>Make the default text smaller, freeing up more space for recommended items and popular item list</li>
+<li>Add vertical scrolling direction for usability</li>
+</ul>
+<h2 id="food-court---individual-food-page">Food Court - Individual Food Page <a href="#food-court---individual-food-page" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1MLZMa009sCeLLFIe1gncQDccG-9RzVZl" alt="Individual Food Page"  />
+</p></p>
+<h3 id="existing-problems-1">Existing problems <a href="#existing-problems-1" class="anchor">🔗</a></h3><ul>
+<li>Messy interface design (without grid system design)</li>
+<li>Unnecessary information (such as &ldquo;title&rdquo;, &ldquo;author&rdquo; and &ldquo;submit time&rdquo;)</li>
+<li>Lack of clear information hierarchy</li>
+<li>One-line comment wastes too much vertical space (Browsing more than two comments at the same time is difficult.)</li>
+</ul>
+<h3 id="new-solution-1">New solution <a href="#new-solution-1" class="anchor">🔗</a></h3><ul>
+<li>Redesign the interface layout (implement grid system) to improve visual organization and clarity</li>
+<li>Remove each information title to create a intuitive and minimalist design</li>
+<li>Emphasize the recipe title using Header 2 size and semi-bold weight (create a typography system)</li>
+<li>Redesign the comment component
+<ul>
+<li>For typography, distinguish reviewer&rsquo;s name and content with different font size and weight</li>
+<li>Set &ldquo;hug content&rdquo; for a single comment component height (making it adaptive based on its content)</li>
+</ul>
+</li>
+</ul>
+<h2 id="my-ingredient---from-ingredient">My ingredient - From ingredient <a href="#my-ingredient---from-ingredient" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=12k8NrRwsmHIZLrnj8m6npQn61GYorPOW" alt="From ingredient"  />
+</p></p>
+<h3 id="existing-problems-2">Existing problems <a href="#existing-problems-2" class="anchor">🔗</a></h3><ul>
+<li>Users are unable to delete or add an ingredient individually (must be sequentially)</li>
+</ul>
+<h3 id="new-solution-2">New solution <a href="#new-solution-2" class="anchor">🔗</a></h3><ul>
+<li>Add a delete button for each ingredient input to improve flexibility and allow users to delete individual items more easily (improving user experience)</li>
+<li>Enlarge the add button in the comfortable thumb zone</li>
+<li>Add frequently input tags to reduce repetitive actions for users (improving user experience)</li>
+</ul>
+<h2 id="seefood---reframe-the-photo">Seefood - Reframe the photo <a href="#seefood---reframe-the-photo" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1UQJ4VEEMgtHzavqGRAn_EUFdWptB9wh9" alt="Reframe the photo"  />
+</p></p>
+<h3 id="new-solution-3">New solution <a href="#new-solution-3" class="anchor">🔗</a></h3><ul>
+<li>Reframe photos before uploading to the system to improve recognition accuracy and enhance the user experience</li>
+</ul>
+<h2 id="seefood---search-result-page">Seefood - Search Result Page <a href="#seefood---search-result-page" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=11z_jKNvd6Q1XqFXwZl5JEfqPc2S5NXx9" alt="Search Result Page"  />
+</p></p>
+<h3 id="existing-problems-3">Existing problems <a href="#existing-problems-3" class="anchor">🔗</a></h3><ul>
+<li>Unclear information hierarchy</li>
+<li>Unnecessary title (such as &ldquo;Search Result&rdquo;)</li>
+</ul>
+<h3 id="new-solution-4">New solution <a href="#new-solution-4" class="anchor">🔗</a></h3><ul>
+<li>Enlarge the space of the search result and attached the uploaded image (redefine information hierarchy)</li>
+<li>Add ingredient, recipe lookup and save to favorite function on the same page (improving user experience)</li>
+<li>Add a new image recognition button to the search bar to improve the user experience for users who have more than one image recognition demand</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

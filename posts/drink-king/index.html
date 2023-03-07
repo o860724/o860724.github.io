@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Drink King - drink order system | My New Hugo Site</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Overview 🔗Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.
+Project Prompt 🔗The handshake drink culture is a part of Taiwanese life. Based on the massive demand in the market, we have devised a platform where people can do tea shopping online and share their orders with groups.">
+<meta name="generator" content="Hugo 0.109.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Drink King - drink order system</h1>
+
+    <div class="tip">
+        <time datetime="2023-03-06 01:00:35 &#43;0800 CST">Mar 6, 2023</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1146 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          6 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h1 id="overview"><strong>Overview</strong> <a href="#overview" class="anchor">🔗</a></h1><p>Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.</p>
+<h1 id="project-prompt"><strong>Project Prompt</strong> <a href="#project-prompt" class="anchor">🔗</a></h1><p>The handshake drink culture is a part of Taiwanese life. Based on the massive demand in the market, we have devised a platform where people can do tea shopping online and share their orders with groups. And also, the partner-customer can easily join the shared order and customize their own drinks.</p>
+<h1 id="my-role"><strong>My Role</strong> <a href="#my-role" class="anchor">🔗</a></h1><ul>
+<li>Project Ideation</li>
+<li>User Research</li>
+<li>User Case</li>
+<li>User Flow</li>
+<li>Wireflow</li>
+<li>Sequence Diagram</li>
+</ul>
+<h1 id="my-tool"><strong>My Tool</strong> <a href="#my-tool" class="anchor">🔗</a></h1><ul>
+<li>Figma</li>
+<li>StarUML</li>
+<li>HackMD</li>
+</ul>
+<h1 id="main-feature"><strong>Main Feature</strong> <a href="#main-feature" class="anchor">🔗</a></h1><ul>
+<li>Sign-in and Sign-up</li>
+<li>Drinks shopping (Search for teashops and drinks)</li>
+<li>Add to Cart (Add / Edit / Delete order)</li>
+<li>Organize group order(Share order)</li>
+<li>Place order</li>
+<li>Review order history</li>
+</ul>
+<h1 id="user-flow"><strong>User Flow</strong> <a href="#user-flow" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1sKndeFPMzHE1z8c0A8LOjgG1SHrl1huF" alt="image alt"  />
+</p></p>
+<hr>
+<h1 id="user-case"><strong>User Case</strong> <a href="#user-case" class="anchor">🔗</a></h1><blockquote>
+<p>📌 There are two types of users</p>
+<ul>
+<li>Main-customer: The person who places the order and can edit all the items in it.</li>
+<li>Partner-customer: The person who joins the order made by the main customer. They can only add items and submit them to the main order.</li>
+</ul>
+</blockquote>
+<h2 id="sign-up--sign-in">Sign up &amp; Sign in <a href="#sign-up--sign-in" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Sign up</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User (main-customer and partner-customer)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To create a new account on the system</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The user has not previously signed up for an account.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>The user is signed in automatically.</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The user successfully creates an account and signs in automatically.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The user is unable to sign up. Provide instructions to the user for troubleshooting.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Sign in</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User (main-customer and partner-customer)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To sign in to the system</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The user has signed up for an account.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>The user&rsquo;s status is signed-in. The user can view their previous records on the system, such as the items added to their cart.</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The user successfully signs in and accesses their account.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The user is unable to sign in, causing by account issue or technical issue. Provide instructions to the user for troubleshooting.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="drink-shopping">Drink shopping <a href="#drink-shopping" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Search for tea shops</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User (main-customer and partner-customer)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To search for tea shops based on the title or offered items</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The user receives search results that match the input title or offer the items the user searched for.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>No matched result found</td>
+</tr>
+<tr>
+<td>Special Requirement</td>
+<td>Each search result must include information about the teashop&rsquo;s title, description and minimum order amount.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Browse teashop information and drink details</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User (main-customer and partner-customer)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To browse teashop information and drink details</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The user can access the teashop information and drink details they need.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-order-add-to-cart">Add order (Add to cart) <a href="#add-order-add-to-cart" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Add an order (Add to cart)</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>User (main-customer and partner-customer)</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To customize drinks and add them to the cart</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The user must be in a signed-in status.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>Newly added items are displayed on the cart page</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The user successfully add their customized drinks to the cart.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>1. The user is not signed in. Redirect to the sign-in page.</td>
+</tr>
+<tr>
+<td></td>
+<td>2. The user is unable to add the drinks to the cart because they are sold out. Alert by the snack bar and disable the add button.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="organize-group-order-share-orders">Organize group order (Share orders) <a href="#organize-group-order-share-orders" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Share the order</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>Main-customer</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To allow the main-customer to organize a group order by sharing their order with friends.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The main-customer has already added an order.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>The system generates a link for order sharing and sends a notification to the assigned partner-customers</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The main-customer successfully shares the order by assigning partner-customers or sharing the link.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>1. The main customer is unable to share the order with the assigned customers, because the assigned account is not valid.</td>
+</tr>
+<tr>
+<td></td>
+<td>2. The main customer is unable to share the order because it has been checked out.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="place-order">Place order <a href="#place-order" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Place order</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>Main-customer</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To allow the main-customer to checkout the items in the cart and place an order.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>1. The main-customer must be signed-in status</td>
+</tr>
+<tr>
+<td></td>
+<td>2. The cart must not be empty.</td>
+</tr>
+<tr>
+<td></td>
+<td>3. The selected teashop must be open.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>Direct to the order history page, where the latest order is displayed.</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>After the main customer checks the order details and places it. Direct to the order history page.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>1. The order can&rsquo;t be placed because the selected teashop is closed. Display the error message.</td>
+</tr>
+<tr>
+<td></td>
+<td>2. The order cannot be placed because the cart is empty or the total price is less than free delivery minimum. Alert by the snack bar.</td>
+</tr>
+<tr>
+<td></td>
+<td>3. The order cannot be placed because the main customer is not signed-in. Redirect to the sign-in page.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="view-order-history">View order history <a href="#view-order-history" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>View order history</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>Main-customer</td>
+</tr>
+<tr>
+<td>Goal</td>
+<td>To allow the main-customer to find their order history on this page.</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>The main customer-must be signed-in status.</td>
+</tr>
+<tr>
+<td>Postconditions</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Main Success Scenario</td>
+<td>The main-customer successfully find their order history.</td>
+</tr>
+<tr>
+<td>Alternative Scenario</td>
+<td>The main-customer is not signed in. Redirect to the sign-in page.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="data-dictionary"><strong>Data Dictionary</strong> <a href="#data-dictionary" class="anchor">🔗</a></h1><h2 id="teashop">Teashop <a href="#teashop" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Data type (Length)</th>
+<th>Primary key</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Teashop_id</td>
+<td>int(4)</td>
+<td>V</td>
+<td>0001~9999</td>
+</tr>
+<tr>
+<td>Teashop_title</td>
+<td>char(10)</td>
+<td></td>
+<td>xxx</td>
+</tr>
+<tr>
+<td>Teashop_tel</td>
+<td>char(11)</td>
+<td></td>
+<td>(07)xxx-xxxx</td>
+</tr>
+<tr>
+<td>Teashop_address</td>
+<td>text(50)</td>
+<td></td>
+<td>No.xxx, xxx Rd, xxx Dist., xxxCity, xxx</td>
+</tr>
+<tr>
+<td>Free_delivery_minimum</td>
+<td>int(4)</td>
+<td></td>
+<td>NTD</td>
+</tr>
+<tr>
+<td>Teashop_Description</td>
+<td>text</td>
+<td></td>
+<td>xxx</td>
+</tr>
+<tr>
+<td>Open_hour</td>
+<td>text</td>
+<td></td>
+<td><strong>Mon</strong> hh:mm ~ hh:mm <br />
+ <strong>Tue</strong>  hh:mm ~ hh:mm <br />
+<strong>Wed</strong> hh:mm ~ hh:mm <br />
+ <strong>Thu</strong> hh:mm ~ hh:mm <br />
+ <strong>Fri</strong> hh:mm ~ hh:mm <br />
+ <strong>Sat</strong> hh:mm ~ hh:mm <br />
+ <strong>Sun</strong> hh:mm ~ hh:mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="order">Order <a href="#order" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Data type (Length)</th>
+<th>Primary key</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order_id</td>
+<td>char(6)</td>
+<td>v</td>
+<td>000001~999999</td>
+</tr>
+<tr>
+<td>Order_date</td>
+<td>date</td>
+<td></td>
+<td>YYYY/MM/DD</td>
+</tr>
+<tr>
+<td>MainCustomer_id</td>
+<td>int(6)</td>
+<td></td>
+<td>000001~999999</td>
+</tr>
+<tr>
+<td>MainCustomer_name</td>
+<td>char(10)</td>
+<td></td>
+<td>xxx</td>
+</tr>
+<tr>
+<td>PartnerCustomer_id</td>
+<td>int(6)</td>
+<td></td>
+<td>000001~999999</td>
+</tr>
+<tr>
+<td>PartnerCustomer_name</td>
+<td>char(10)</td>
+<td></td>
+<td>xxx</td>
+</tr>
+<tr>
+<td>Customer_tel</td>
+<td>char(10)</td>
+<td></td>
+<td>09xx-xxx-xxx</td>
+</tr>
+<tr>
+<td>Teashop_id</td>
+<td>char(6)</td>
+<td></td>
+<td>000001~999999</td>
+</tr>
+<tr>
+<td>Teashop_title</td>
+<td>char(10)</td>
+<td></td>
+<td>xxxxxx</td>
+</tr>
+<tr>
+<td>Drink_id</td>
+<td>int(6)</td>
+<td></td>
+<td>000001~999999</td>
+</tr>
+<tr>
+<td>Drink_title</td>
+<td>char(10)</td>
+<td></td>
+<td>xxxxxx</td>
+</tr>
+<tr>
+<td>Total_price</td>
+<td>int(6)</td>
+<td></td>
+<td>NTD</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="wireflow"><strong>Wireflow</strong> <a href="#wireflow" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=18tNFaQnW1od08RIyvWUOqBvOtAP6KppR" alt="image alt"  />
+</p></p>
+<hr>
+<h1 id="ui-dictionary"><strong>UI Dictionary</strong> <a href="#ui-dictionary" class="anchor">🔗</a></h1><h2 id="ui-no3---add-to-cart-ui">UI No.3 - add to cart UI <a href="#ui-no3---add-to-cart-ui" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1033AkJICNynlUdb_2q1SAcRwNN6-I4hd" alt="image alt"  />
+</p></p>
+<ol>
+<li>Browse the teashop information and drinks details</li>
+<li>Customize their drinks</li>
+<li>Add them to cart
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Function</th>
+<th>Column name in DB</th>
+<th>Data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Teashop title</td>
+<td>Label</td>
+<td>Show title</td>
+<td>Teashop_Title</td>
+<td>Char(10)</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>Label</td>
+<td>Show address</td>
+<td>Teashop_Address</td>
+<td>Char(30)</td>
+</tr>
+<tr>
+<td>Opening hour</td>
+<td>Label</td>
+<td>Show opening hour</td>
+<td>Teashop_Hour</td>
+<td>Char(15)</td>
+</tr>
+<tr>
+<td>Phone number</td>
+<td>Label</td>
+<td>Show phone number</td>
+<td>Teashop_Tel</td>
+<td>Char(10)</td>
+</tr>
+<tr>
+<td>Free delivery minimum</td>
+<td>Label</td>
+<td>Show Free delivery minimum  amount</td>
+<td>Teashop_Minimum</td>
+<td>int(5)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Drink Title</td>
+<td>Label</td>
+<td>Show drink title</td>
+<td>Drink_title</td>
+<td>Char(10)</td>
+</tr>
+<tr>
+<td>Unit Price</td>
+<td>Label</td>
+<td>Show unit price</td>
+<td>Unit_price</td>
+<td>int(4)</td>
+</tr>
+<tr>
+<td>Q&rsquo;ty</td>
+<td>TextBox</td>
+<td>Input order q&rsquo;ty</td>
+<td>Quantity</td>
+<td>int(4)</td>
+</tr>
+<tr>
+<td>Sugar</td>
+<td>TextBox</td>
+<td>Input sugar scale</td>
+<td>Sugar</td>
+<td>Char(4)</td>
+</tr>
+<tr>
+<td>Ice</td>
+<td>TextBox</td>
+<td>Input ice scale</td>
+<td>Ice</td>
+<td>Char(4)</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Button</td>
+<td>Choose drink size</td>
+<td>Size</td>
+<td>Char(4)</td>
+</tr>
+<tr>
+<td>Add</td>
+<td>Button</td>
+<td>Add drinks to cart</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<hr>
+<h1 id="sequence-diagram"><strong>Sequence Diagram</strong> <a href="#sequence-diagram" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1S5pRbkgNsRk7x0nP_hEqqqLdllGrXT82" alt="image alt"  />
+</p></p>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

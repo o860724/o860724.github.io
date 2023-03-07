@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>BPM system | My New Hugo Site</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Overview 🔗Our BPM system is based on the e-form requirements of the HRM system. We aim to expand more comprehensive functions to help organizations establish, execute, monitor, and optimize their business processes.
+We virtualize physical business processes by using forms and flows, which we call &ldquo;tasks.&rdquo; The task manager can establish a new task on the backstage. Then, collecting essential information via form, assigning responsible owners through flow setting, and controlling users&rsquo; roles for each task, such as task applicant, viewer, manager, or monitor.">
+<meta name="generator" content="Hugo 0.109.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">BPM system</h1>
+
+    <div class="tip">
+        <time datetime="2023-03-06 01:00:37 &#43;0800 CST">Mar 6, 2023</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          463 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h1 id="overview"><strong>Overview</strong> <a href="#overview" class="anchor">🔗</a></h1><p>Our BPM system is based on the e-form requirements of the HRM system. We aim to expand more comprehensive functions to help organizations establish, execute, monitor, and optimize their business processes.</p>
+<p>We virtualize physical business processes by using forms and flows, which we call &ldquo;tasks.&rdquo; The task manager can establish a new task on the backstage. Then, collecting essential information via form, assigning responsible owners through flow setting, and controlling users&rsquo; roles for each task, such as task applicant, viewer, manager, or monitor. Users can then easily start or execute an approval process on the forestage (supporting mobile and web).</p>
+<p>User accounts are linked to our HRM system. Furthermore, we support to set a specific ‘virtual organization’ for the collaborative task which helps cross-functional teamwork become much easier.</p>
+<h1 id="main-feature"><strong>Main Feature</strong> <a href="#main-feature" class="anchor">🔗</a></h1><p>Forestage: Execute the business processes(task)</p>
+<ul>
+<li>Apply new task</li>
+<li>My task list</li>
+<li>My application</li>
+<li>My approval</li>
+<li>Info. center</li>
+</ul>
+<p>Backstage: Establish the business process(task), organization and administration</p>
+<ul>
+<li>Business Process (Task) Design: form, flow engine, task access control</li>
+<li>Organization: virtual organization, account management</li>
+<li>Administration: access level setting, change log</li>
+</ul>
+<h1 id="my-role"><strong>My Role</strong> <a href="#my-role" class="anchor">🔗</a></h1><ul>
+<li>Product Manager</li>
+</ul>
+<h1 id="my-tool"><strong>My Tool</strong> <a href="#my-tool" class="anchor">🔗</a></h1><ul>
+<li>Trello</li>
+<li>Figma</li>
+<li>Notion</li>
+</ul>
+<h1 id="function-map"><strong>Function Map</strong> <a href="#function-map" class="anchor">🔗</a></h1><p><p class="markdown-image">
+  <img src="https://drive.google.com/uc?export=view&amp;id=1DLXD_RQCRtQ958kquhnsRsov4Hcv6rzq" alt="User Flow"  />
+</p></p>
+<h1 id="task-execution"><strong>Task Execution</strong> <a href="#task-execution" class="anchor">🔗</a></h1><h2 id="user-operation--flow-process-list">User Operation &amp; Flow Process List <a href="#user-operation--flow-process-list" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Flow direction</th>
+<th>Operation node</th>
+<th>Operation node status</th>
+<th>Next node status</th>
+<th>Pass by node status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Submit/ Approve</td>
+<td>Downstream flow to next node</td>
+<td>In-progress node</td>
+<td>In progress →Completed</td>
+<td>Unprocessed →in progress</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Submit/ Approve</td>
+<td>Downstream flow to end point</td>
+<td>In-progress node</td>
+<td>In progress →Completed</td>
+<td>End point(Flow completed)</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Reject</td>
+<td>Downstream flow to end point</td>
+<td>In-progress node</td>
+<td>In progress →Completed</td>
+<td>End point(Flow completed)</td>
+<td>In progress →unprocessed(Keep owners)</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>Upstream flow to assigned node</td>
+<td>In-progress node</td>
+<td>In progress →Unprocessed(Free owners)</td>
+<td>Completed→in progress(Update owners)</td>
+<td>In progress/ completed →unprocessed(Free owners)</td>
+</tr>
+<tr>
+<td>Withdraw</td>
+<td>Upstream flow to the previous node</td>
+<td>Previous node of  in-progress node</td>
+<td>Completed →in progress</td>
+<td>*Next node= operation node</td>
+<td>*Original processing node: in progress →unprocessed(Free owners)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="node-status-definition">Node status Definition <a href="#node-status-definition" class="anchor">🔗</a></h2><table>
+<thead>
+<tr>
+<th>Node status</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unprocessed</td>
+<td>The node is unprocessed in the flow. When the node status transfer to unprocessed, there is no owner of the node. (The owners haven’t been fetched or have been freed, except for &ldquo;reject&rdquo;)</td>
+</tr>
+<tr>
+<td></td>
+<td>The task does’t exist in any user’s ‘My task list’.</td>
+</tr>
+<tr>
+<td>In-progress</td>
+<td>The node is in-progress in the flow. When the node status transfer to in-progress, the system fetch the owners of the node and send the task to the owners’ ‘My task list’</td>
+</tr>
+<tr>
+<td></td>
+<td>The task exists in the owners’ ‘My task list’.</td>
+</tr>
+<tr>
+<td>Completed</td>
+<td>The node is completed in the flow. When node owners have operated  on the node, the node status transfers to completed and the node owners are fixed.</td>
+</tr>
+<tr>
+<td></td>
+<td>If it&rsquo;s a starting point, the task exists in the applicant&rsquo;s &ldquo;My application&rdquo;. If it&rsquo;s a process node, the task must exists in at least one of the owners’ &ldquo;My approval&rdquo;.</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2023 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

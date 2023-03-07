@@ -6,15 +6,35 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2023 01:00:35 +0800</lastBuildDate><atom:link href="https://o860724.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Li</copyright>
+    <lastBuildDate>Mon, 06 Mar 2023 01:00:37 +0800</lastBuildDate><atom:link href="https://o860724.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BPM system</title>
+      <link>https://o860724.github.io/posts/bpm-system/</link>
+      <pubDate>Mon, 06 Mar 2023 01:00:37 +0800</pubDate>
+      
+      <guid>https://o860724.github.io/posts/bpm-system/</guid>
+      <description>Overview 🔗Our BPM system is based on the e-form requirements of the HRM system. We aim to expand more comprehensive functions to help organizations establish, execute, monitor, and optimize their business processes.
+We virtualize physical business processes by using forms and flows, which we call &amp;ldquo;tasks.&amp;rdquo; The task manager can establish a new task on the backstage. Then, collecting essential information via form, assigning responsible owners through flow setting, and controlling users&amp;rsquo; roles for each task, such as task applicant, viewer, manager, or monitor.</description>
+    </item>
+    
+    <item>
+      <title>Seefood - image recognition system</title>
+      <link>https://o860724.github.io/posts/seefood-image-recognition-system/</link>
+      <pubDate>Mon, 06 Mar 2023 01:00:36 +0800</pubDate>
+      
+      <guid>https://o860724.github.io/posts/seefood-image-recognition-system/</guid>
+      <description>Overview 🔗Seafood is an innovative app that helps foodies recognize cuisine from attractive photos and assists cooks in getting recipes and ingredient details. It also enables users to easily search for recipes by on hand ingredients, thereby helping them use up the food stored in fridges. The app supports voice typing, because we know that cooks’ hands are never spared in the kitchen. Additionally, the app welcomes all users to share their creative recipes, building up the community on our app and feeding our model training database simultaneously.</description>
+    </item>
+    
     <item>
       <title>Drink King - drink order system</title>
-      <link>https://o860724.github.io/posts/drink-king-drink-order-system-1/</link>
+      <link>https://o860724.github.io/posts/drink-king/</link>
       <pubDate>Mon, 06 Mar 2023 01:00:35 +0800</pubDate>
       
-      <guid>https://o860724.github.io/posts/drink-king-drink-order-system-1/</guid>
-      <description>Drink King - drink order system 🔗Overview 🔗Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.
-Project Promt 🔗The handshake drink culture is a part of Taiwanese life.</description>
+      <guid>https://o860724.github.io/posts/drink-king/</guid>
+      <description>Overview 🔗Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.
+Project Prompt 🔗The handshake drink culture is a part of Taiwanese life. Based on the massive demand in the market, we have devised a platform where people can do tea shopping online and share their orders with groups.</description>
     </item>
     
   </channel>
