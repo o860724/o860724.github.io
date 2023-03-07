@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Hi I am Yu-hsuan Li</title>
     <link>https://o860724.github.io/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Hi I am Yu-hsuan Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Li</copyright>
     <lastBuildDate>Mon, 06 Mar 2023 01:00:37 +0800</lastBuildDate><atom:link href="https://o860724.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BPM system</title>
@@ -29,10 +28,10 @@ We virtualize physical business processes by using forms and flows, which we cal
     
     <item>
       <title>Drink King - drink order system</title>
-      <link>https://o860724.github.io/posts/drink-king/</link>
+      <link>https://o860724.github.io/posts/drink-king-drink-order-system/</link>
       <pubDate>Mon, 06 Mar 2023 01:00:35 +0800</pubDate>
       
-      <guid>https://o860724.github.io/posts/drink-king/</guid>
+      <guid>https://o860724.github.io/posts/drink-king-drink-order-system/</guid>
       <description>Overview 🔗Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.
 Project Prompt 🔗The handshake drink culture is a part of Taiwanese life. Based on the massive demand in the market, we have devised a platform where people can do tea shopping online and share their orders with groups.</description>
     </item>
