@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PRODUCT_MANAGER on Hi I am Yu-hsuan Li</title>
+    <link>https://o860724.github.io/tags/product_manager/</link>
+    <description>Recent content in PRODUCT_MANAGER on Hi I am Yu-hsuan Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Jan 2023 01:00:37 +0800</lastBuildDate><atom:link href="https://o860724.github.io/tags/product_manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BPM system</title>
+      <link>https://o860724.github.io/posts/bpm-system/</link>
+      <pubDate>Fri, 06 Jan 2023 01:00:37 +0800</pubDate>
+      
+      <guid>https://o860724.github.io/posts/bpm-system/</guid>
+      <description>&lt;p&gt;Our BPM system is based on the e-form requirements of the HRM system. We aim to expand more comprehensive functions to help organizations establish, execute, monitor, and optimize their business processes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

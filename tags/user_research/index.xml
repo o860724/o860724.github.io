@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>USER_RESEARCH on Hi I am Yu-hsuan Li</title>
+    <link>https://o860724.github.io/tags/user_research/</link>
+    <description>Recent content in USER_RESEARCH on Hi I am Yu-hsuan Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2019 01:00:36 +0800</lastBuildDate><atom:link href="https://o860724.github.io/tags/user_research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seefood - image recognition system</title>
+      <link>https://o860724.github.io/posts/seefood-image-recognition-system/</link>
+      <pubDate>Mon, 06 May 2019 01:00:36 +0800</pubDate>
+      
+      <guid>https://o860724.github.io/posts/seefood-image-recognition-system/</guid>
+      <description>&lt;p&gt;🌟  &lt;em&gt;3rd place in 23rd International ICT Innovative Services Awards&lt;/em&gt; 🌟&lt;/p&gt;
+&lt;p&gt;Seafood is an innovative app that helps foodies recognize cuisine from attractive photos and assists cooks in getting recipes and ingredient details. It also enables users to easily search for recipes by on hand ingredients, thereby helping them use up the food stored in fridges.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Drink King - drink order system</title>
+      <link>https://o860724.github.io/posts/drink-king-drink-order-system/</link>
+      <pubDate>Sat, 30 Jun 2018 01:00:35 +0800</pubDate>
+      
+      <guid>https://o860724.github.io/posts/drink-king-drink-order-system/</guid>
+      <description>&lt;p&gt;Drink King tries to help people who need drink order inspiration or suffer from group order chaos. Our users can easily search for drink shops around and see the drink lists offered today. They can also share their order with friends, who can add their customized orders themselves, making the group ordering process easier and more accurate.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
